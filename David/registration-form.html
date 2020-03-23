@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Champo's Registration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Reg-form.css" rel="stylesheet">
+    <div class="header">
+      <h1>This is my registration page</h1>
+      <p>My header area</p>
+    </div>
+</head>
+
+<body>
+    <h2>Navigation Menu</h2>
+    <nav> <!--Navigator menu -->
+      <a href="/index.html/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <form>
+      <h1>Registration form</h1>
+      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+
+      <input type="text" placeholder="First Name" aria-label="First Name">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="text" placeholder="Last Name" aria-label="Last Name">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="text" placeholder="Address 1" aria-label="Address 1">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="text" placeholder="Address 2" aria-label="Address 2"><br>
+
+      <input type="text" placeholder="Address 3" aria-label="Address 3"><br>
+
+      <input type="text" placeholder="Suburb" aria-label="Suburb">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <select id="state" name="State" aria-label="State drop down list">
+        <option value="Northern Territory" selected>Northern Territory</option>
+        <option value="Queensland">Queensland</option>
+        <option value="New South Wales">New South Wales</option>
+        <option value="Victoria">Victoria</option>
+        <option value="Tasmania">Tasmania</option>
+        <option value="South Australia">South Australia</option>
+        <option value="Western Australia">Western Australia</option>
+      </select><br>
+
+      <input type="text" placeholder="Post Code" aria-label="Post Code">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="email" placeholder="Enter your email" aria-label="Enter your email">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="password" placeholder="Enter a password" aria-label="Enter a password">
+      <strong><abbr title="required">*</abbr></strong><br>
+
+      <input type="tel" placeholder="Landline" aria-label="Enter a Landline nummber"><br>
+
+      <input type="tel" placeholder="Mobile" aria-label="Enter a mobile number"><br>
+
+      <input type="date" id="birthdate" name="birthdate" aria-label="Enter your birthdate">
+      <strong><abbr title="required">*</abbr></strong><br>
+      <div>
+      </div>
+      <button type="button" aria-label="Submit">Submit your details</button>
+
+</form>
+</body>
+<footer>
+  <div class="flex-container">
+    <div><a href="#" class="previous">&laquo; Previous</a></div>
+    <div><a href="#" class="previous round">&#8249;</a></div>
+    <div><p><small>Copyright &copy; 2020 Team Champo</small></p></div>
+    <div><a href="#" class="next">Next &raquo;</a></div>
+    <div><a href="#" class="next round">&#8250;</a></div>
+  </div>
+</footer>
+
+</html>
