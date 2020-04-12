@@ -12,7 +12,7 @@ background-color: #FFFFFF;
 
 @font-face {
   font-family: Lato2OFLWeb|generic-family|initial|inherit;
-  src:url(Lato2OFLWeb\Lato2OFLWeb\Lato\fonts);
+  src:url(\Lato\fonts);
 }
 
 
