@@ -4,11 +4,12 @@
 }
 
 @font-face {
-  font-family: Lato2OFLWeb|generic-family|initial|inherit;
-  src:url(Lato2OFLWeb\Lato2OFLWeb\Lato\fonts);
+  font-family: 'Lato';
+  src:url('fonts/Lato2OFLWeb/Lato/fonts/Lato-BoldItalic.woff2');
 }
 
 body{
+  font-family: 'Lato', sans-serif;
   background-color: #FFFFFF;
 
 }
