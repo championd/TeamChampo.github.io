@@ -39,3 +39,20 @@
     color: black !important;
     text-align: left !important;
 }
+.btn-orange {
+            background-color: #E35205;
+            color: white;
+        }
+
+        .btn {
+            border-radius: 0 !important;
+            padding: 10px 30px;
+        }
+
+        .display-none{
+            display:none;
+        }
+
+        .form-control{
+            border-radius: 0 !important;
+        }
