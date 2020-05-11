@@ -93,7 +93,12 @@
             </div>
         </div>
     </div>
-<div class="col-md-12 " style="min-height: 385px; top: 20px; bottom: 20px;">
+    
+    
+    
+ <!-- dvManagingCard -->
+    <div id="dvManagingCard" class="row display-none">
+        <div class="col-md-12 " style="min-height: 385px; top: 20px; bottom: 20px;">
             <div class="row">
                 <div class="col-md-6">
                     <h3>Get Card</h3>
@@ -123,6 +128,44 @@
         </div>
     </div>
 
+    <!-- dvTopUp -->
+    <div id="dvTopUp" class="row display-none">
+        <div class="col-md-12 " style="min-height: 250px; top: 20px; bottom: 20px;">
+            <div class="row">
+                <div id="dvTopUpContent" class="col-md-12">
+
+                    <h4>Top up Your tap and ride</h4>
+                    <p>
+                        You will need to have:<br>
+                        Your tap and ride Card<br>
+                        Your Australian-issued Mastercard or Visa credit/debit card
+                    </p>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="text">Enter tap and ride card NO:</label><br>
+                            <input type="number" name="" class="form-control">
+                        </div>
+
+                        <div class="col-sm-5">
+                            <label for="text">Enter your Card details</label><br>
+                            <input type="number" name="confirm and Pay" class="form-control">
+                        </div>
+
+                        <div class="col-sm-2 text-center">
+                            <button type="button" onclick="javascript:TopUpCard()" class="btn btn-orange" style="margin-top: 22px;">Save</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="dvWarningTopUp" class="col-md-12 text-danger display-none">
+                    <h4>It may take 90 min</h4>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+  
     <!-- dvTopUp -->
     <div id="dvTopUp" class="row">
         <div class="col-md-12 " style="min-height: 250px; top: 20px; bottom: 20px;">
