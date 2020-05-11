@@ -64,6 +64,36 @@
             </nav>
         </div>
     </div>
+      <!-- dvJourneyPlaner -->
+    <div id="dvJourneyPlaner" class="row">
+        <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
+            <h3>Jourey Planer</h3>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h6>FROM</h6>
+                    <select class="form-control selectpicker" id="ddlFrom" data-live-search="true">
+                        <option value="" selected>-- SELECT --</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-5">
+                    <h6>TO</h6>
+                    <select class="form-control selectpicker" id="ddlTo" data-live-search="true">
+                        <option value="" selected>-- SELECT --</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <button type="button" id="btnSearch" class="btn btn-orange" onclick="javascript:ShowDistance()" style="margin-top: 22px;">Search</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 te" style="margin-top:10px;">
+                    <h4><div id="lbldist" class="text-success display-none"></div></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
  <!-- Body -->
     <div class="container-fluid px-0">
         <div class="row mx-0">
