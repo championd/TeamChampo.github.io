@@ -157,6 +157,23 @@ p{
   margin-top: 40px;
 }
 
+.previous {
+  background-color: #E35205;
+  color: black;
+}
+
+.next {
+  background-color: #E35205;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media only screen and (max-width: 400px) {
   [class*="bottom"] {
     width: 100%;
