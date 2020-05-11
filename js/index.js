@@ -1,10 +1,3 @@
-
-
-
-var city = ["Darwin", "LacksideDr", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];
-
-var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];
-
 window.onload = function () {
     debugger;
     var selectFrom = document.getElementById("ddlFrom");
@@ -23,5 +16,13 @@ window.onload = function () {
         selectTo.add(optionTo, 0);
     }
 
-};
+    var selectRoute = document.getElementById("ddlRoute");
 
+    for (var j = 0; j < route.length; j++) {
+        var optionRoute = document.createElement('option');
+
+        optionRoute.text = route[j];
+        optionRoute.value = j + 1;
+        selectRoute.add(optionRoute, 0);
+
+    }
