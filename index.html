@@ -56,7 +56,7 @@
                             More
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-updates-75-cases-in-delhi-are-asymptomatic-or-with-mild-symptoms-cm-kejriwal-says/liveblog/75638171.cms" target="_blank">News</a>
+                            <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
                             <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
                         </div>
                     </li>
@@ -115,15 +115,29 @@
     <!-- dvTimeTable -->
     <div id="dvTimeTable" class="row display-none">
         <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
-            <h3>TimeTable</h3>
-            <div class="row">
-                <div class="col-sm-5">
-                    <h6>Select Line Or Route</h6>
-                    <select class="form-control selectpicker" id="ddlRoute" data-live-search="true"></select>
+            <div id="dvTimeTableContent">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>TimeTable</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h6>Select Line Or Route</h6>
+                        <select class="form-control selectpicker" id="ddlRoute" data-live-search="true"></select>
+                    </div>
+
+                    <div class="col-sm-2 text-center">
+                        <button type="button" id="btnSearch" onclick="javascript: ShowTimetable()" class="btn btn-orange" style="margin-top: 22px;">Search</button>
+                    </div>
                 </div>
 
-                <div class="col-sm-2 text-center">
-                    <button type="button" id="btnSearch" class="btn btn-orange" style="margin-top: 22px;">Search</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12 te" style="margin-top:10px;">
+                    <div id="lblTimetableWarning" class="text-danger display-none">
+                        <h4>Curently there may be a server issue. You will get timetable after some time.</h4>
+                    </div>
                 </div>
             </div>
         </div>
