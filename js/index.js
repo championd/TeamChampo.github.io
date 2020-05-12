@@ -1,4 +1,4 @@
-/ variable Initialization
+// variable Initialization
 var city = ["Darwin", "LacksideDr", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];   //array for binding From Location and To location droupdown (In Journey Planer page)
 
 var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];         //array for binding Route droupdown (In Timetable page)
@@ -61,7 +61,7 @@ function GotoUrl(div) {
     // Remove Active class from whole page
     var elems = document.querySelectorAll(".active");
 
-    [].forEach.call(elems, function (el) {  
+    [].forEach.call(elems, function (el) {   
         el.classList.remove("active");
     });
 
@@ -138,7 +138,7 @@ function ShowDistance() {
                 var lbldist = document.getElementById("lbldist");
                 lbldist.classList.remove("display-none");
 
-                document.getElementById('lbldist').innerHTML = 'Distance is ' + distArray[FromLocation - 1][ToLocation - 1] +' By Train.';
+                document.getElementById('lbldist').innerHTML = 'Distance is ' + distArray[FromLocation - 1][ToLocation - 1] +' By Bus.';
 
             } else {
                 alert("From and To location can not be same");
@@ -156,8 +156,6 @@ function ShowDistance() {
         lbldist.classList.add("display-none");
     }
 }
-
-
 
 
 
