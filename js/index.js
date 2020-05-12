@@ -1,10 +1,7 @@
-// variable Initialization
-var city = ["Darwin", "LacksideDr", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];  // For Binding in From location and To location dropdown
+var city = ["Darwin", "LacksideDr", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];
 
-var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];        // For Binding in Route dropdown
+var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];
 
-
-//Bind From Location To Location and Route dropdown on window load event
 window.onload = function () {
     debugger;
     var selectFrom = document.getElementById("ddlFrom");
@@ -36,7 +33,6 @@ window.onload = function () {
 
 };
 
-
 //GotoUrl ---------------------------------------------------------
 function GotoUrl(div) {
     debugger;
@@ -67,3 +63,31 @@ function GotoUrl(div) {
     }
     return false;
 }
+
+// Card No and Card Detail Save Event  ('btnTopUp' click event)
+function TopUpCard() {
+    debugger;
+   
+    var txtCardNo = document.getElementById('txtCardNo').value;
+
+    var txtCardDetail = document.getElementById('txtCardDetail').value;
+
+    if (txtCardNo) {
+        if (txtCardDetail) {
+            var div = document.getElementById("dvTopUpContent");
+            div.remove();
+            var div = document.getElementById("dvWarningTopUp");
+            div.classList.remove("display-none");
+        }
+        else {
+            alert("Card Detail can not be null");
+        }
+    }
+    else {
+        alert("Card No can not be null");
+    }
+
+}
+
+
+
