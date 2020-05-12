@@ -56,7 +56,8 @@
                             More
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="https://timesofindia.indiatimes.com/india/coronavirus-in-india-live-updates-75-cases-in-delhi-are-asymptomatic-or-with-mild-symptoms-cm-kejriwal-says/liveblog/75638171.cms" target="_blank">News</a>
+                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
                         </div>
                     </li>
                 </ul>
@@ -100,7 +101,7 @@
                     </select>
                 </div>
                 <div class="col-sm-2 text-center">
-                    <button type="button" id="btnSearch" class="btn btn-orange" style="margin-top: 22px;">Search</button>
+                    <button type="button" id="btnSearch" class="btn btn-orange" onclick="javascript:ShowDistance()" style="margin-top: 22px;">Search</button>
                 </div>
             </div>
             <div class="row">
@@ -118,8 +119,7 @@
             <div class="row">
                 <div class="col-sm-5">
                     <h6>Select Line Or Route</h6>
-                    <select class="form-control selectpicker" id="ddlRoute" data-live-search="true">
-                    </select>
+                    <select class="form-control selectpicker" id="ddlRoute" data-live-search="true"></select>
                 </div>
 
                 <div class="col-sm-2 text-center">
@@ -177,24 +177,88 @@
                     <div class="row">
                         <div class="col-sm-5">
                             <label for="text">Enter tap and ride card NO:</label><br>
-                            <input type="number" name="" class="form-control">
+                            <input id="txtCardNo" type="number" name="" class="form-control">
                         </div>
 
                         <div class="col-sm-5">
                             <label for="text">Enter your Card details</label><br>
-                            <input type="number" name="confirm and Pay" class="form-control">
+                            <input id="txtCardDetail" type="number" name="confirm and Pay" class="form-control">
                         </div>
 
                         <div class="col-sm-2 text-center">
-                            <button type="button" class="btn btn-orange" style="margin-top: 22px;">Save</button>
+                            <button type="button" id="btnTopUp" onclick="javascript:TopUpCard()" class="btn btn-orange" style="margin-top: 22px;">Save</button>
                         </div>
                     </div>
 
                 </div>
-                <div id="dvWarningTopUp" class="col-md-12 text-danger display-none">
+                <div id="dvWarningTopUp" class="col-md-12 text-success display-none">
                     <h4>It may take 90 min</h4>
                 </div>
-                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- dvContactUs -->
+    <div id="dvContactUs" class="row display-none">
+        <div class="col-md-6 " style="min-height: 700px; top: 20px; bottom: 20px; left:20px; background-color:white;">
+            <div class="container">
+                <h3>Contact US</h3>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" class="form-control">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="form-control" name="lastname" placeholder="Your email..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-sm-12">
+                        <input class="btn btn-orange" type="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--3 Ticket buttons-->
+    <div class="row" style="margin:10px 10px;">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <button type="button" class="btn btn-orange" onclick="javascript: GotoUrl('dvManagingCard')">Buy Travel Card</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button type="button" class="btn btn-orange " onclick="javascript: GotoUrl('dvTopUp')">Top Up Your Card</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button type="button" class="btn btn-orange" onclick="javascript: GotoUrl('dvManagingCard')">Manage your Card</button>
+                </div>
             </div>
         </div>
     </div>
