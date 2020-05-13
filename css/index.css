@@ -1,5 +1,6 @@
  body {
             margin: 0;
+            margin-bottom: 100px;
             font-family: sans-serif !important;
         }
 
@@ -8,7 +9,14 @@
         }
 
         footer {
-            color: white;
+        position: fixed;
+        height: 100px;
+        background-color: #1F1F5F;
+        color: white;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
         }
 
         .top-right {
