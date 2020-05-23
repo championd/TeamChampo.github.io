@@ -1,5 +1,5 @@
 // variable Initialization
-var city = ["Darwin", "LacksideDr", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];   //array for binding From Location and To location droupdown (In Journey Planer page)
+var city = ["Darwin", "Lakeside Drive", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];   //array for binding From Location and To location droupdown (In Journey Planer page)
 
 var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];         //array for binding Route droupdown (In Timetable page)
 
@@ -61,7 +61,7 @@ function GotoUrl(div) {
     // Remove Active class from whole page
     var elems = document.querySelectorAll(".active");
 
-    [].forEach.call(elems, function (el) {   
+    [].forEach.call(elems, function (el) {
         el.classList.remove("active");
     });
 
@@ -92,7 +92,7 @@ function GotoUrl(div) {
 function TopUpCard() {
     debugger;
 
-    var txtCardNo = document.getElementById('txtCardNo').value;          
+    var txtCardNo = document.getElementById('txtCardNo').value;
 
     var txtCardDetail = document.getElementById('txtCardDetail').value;
 
@@ -156,6 +156,3 @@ function ShowDistance() {
         lbldist.classList.add("display-none");
     }
 }
-
-
-
