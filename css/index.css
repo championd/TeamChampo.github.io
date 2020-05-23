@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'Lato';
+  src:url('fonts/Lato2OFLWeb/Lato/fonts/Lato-BoldItalic.woff2');
+}
+
  body {
             margin: 0;
             margin-bottom: 100px;
-            font-family: sans-serif !important;
+            font-family: 'Lato', sans-serif !important;
         }
 
         .bg-Arafura-Blue {
