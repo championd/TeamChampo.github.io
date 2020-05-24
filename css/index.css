@@ -13,16 +13,26 @@
             background-color: #1F1F5F !important;
         }
 
-        footer {
-        position: fixed;
-        height: 100px;
-        background-color: #1F1F5F;
-        color: white;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        margin-bottom: 0px;
-        }
+.info_bar {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-color: #E35205;
+  text: #454347
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  background-color: #1F1F5F;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
 
         .top-right {
             position: absolute;
