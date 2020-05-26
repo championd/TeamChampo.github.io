@@ -257,11 +257,19 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top:10px;">
-                    <div class="col-sm-12">
-                        <input class="btn btn-orange" type="button" value="Submit">
-                    </div>
-                </div>
+      <div class="row" style="margin-top:10px;">
+        <div class="col-sm-12">
+        <button type="button" id="btnSubmit" onclick="openWin()" class="btn btnSubmit" >Submit Form</button>
+
+        <script>
+        var formSent;
+        function openWin() {
+        formSent = window.open("", "formSent", "width=200,height=100");
+        formSent.document.write("<p>Your request has been sent</p>");
+        }
+        </script>
+        </div>
+      </div>
             </div>
         </div>
     </div>

@@ -75,13 +75,17 @@ footer {
 
         .btn-orange {
             background-color: #E35205;
-            color: white;
+            color: #454347;
         }
 
         .btn {
             border-radius: 0 !important;
             padding: 10px 30px;
         }
+
+        .btnSubmit {
+            background-color: #E35205;
+            color: #454347;
 
         .display-none{
             display:none;
