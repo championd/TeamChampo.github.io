@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <title>About NT Public Transport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <link rel="icon" href="favicon.ico" >
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="row topnav" id="myTopnav">
+  <div class="col-md-12">
+    <nav class="navbar navbar-expand-sm bg-Arafura-Blue navbar-dark">
+    <!-- logo -->
+    <figure>
+    <figcaption>logo</figcaption>
+      <img src="../images/logo.png" alt="logo" width="70px">
+    </figure>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a id="lnkHome" class="nav-link active" href="javascript:GotoUrl('lnkHome')">Home</a>
+      </li>
+
+    <!-- Plan Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plan</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="javascript:GotoUrl('dvJourneyPlanner')">Journey Planner</a>
+            <a class="dropdown-item" href="javascript:GotoUrl('dvTimeTable')">Timetable</a>
+          </div>
+      </li>
+
+    <!-- Tickets Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tickets</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="javascript:GotoUrl('dvTopUp')">Online TopUp</a>
+          <a class="dropdown-item" href="javascript:GotoUrl('dvManagingCard')">Managing Card</a>
+        </div>
+    </li>
+
+    <!-- More Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
+          <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
+        </div>
+    </li>
+  </ul>
+  </nav>
+  </div>
+</header>
+
+<navbar class="info_bar">
+
+  <img src="https:/img.icons8.com/color/48/000000/warning-shield.png"/>
+  <p class="message"> "Coronavirus: A State of Emergency has been declared in the Northern Territory due to coronavirus (COVID-19)."</p>
+  <div class="link-container" style="display: initial;"><div class="seperator"></div><a class="link int-link hide-on-interact" href="http://www.coronavirus.nt.gov.au" target="_self" data-intid="15"><span class="link-text">Learn more</span><svg class="arrow-icon" width="9" height="10" viewBox="0 0 9 9"><<path d="M4.7,4.5L0,9h2.8l3.8-3.7C6.9,5.1,7,4.8,7,4.5c0-0.3-0.1-0.6-0.4-0.8L2.8,0H0L4.7,4.5z"></path></svg></a></div>
+
+</navbar>
+
+    <!-- Load Area -->
+    <div class="row">
+        <div id="loadArea" class="col-md-12" style="background-color:#f2f3f4;"></div>
+    </div>
+
+<!-- Body -->
+
+<h3>About NT Public transport</h3>
+This site provides information for travellers to make it easier to travel on the Darwin / Palmerston bus network.<br>
+
+
+<br>
