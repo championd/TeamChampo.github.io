@@ -1,60 +1,68 @@
-
-
 @font-face {
   font-family: 'Lato';
   src:url('fonts/Lato2OFLWeb/Lato/fonts/Lato-BoldItalic.woff2');
 }
 
-body{
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  background-color: #FFFFFF;
+ body {
+            margin: 0;
+            font-family: 'Lato', sans-serif !important;
+        }
 
-}
-header{
-  background-color: #1F1F5F;
-  width: 100%;
-  height:100px;
-  color: #FFFFFF;
-}
+        .bg-Arafura-Blue {
+            background-color: #1F1F5F !important;
+        }
 
-.bg-Arafura-Blue {
-    background-color: #1F1F5F !important;
-}
+        footer {
+        position: static;
+        height: 100px;
+        background-color: #1F1F5F;
+        color: white;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+        }
 
-.topnav ul {
-    margin-left: 30px;
-}
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
 
-    .topnav ul li {
-        padding: 5px;
-    }
+        .topnav ul {
+            margin-left: 30px;
+        }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+            .topnav ul li {
+                padding: 5px;
+            }
 
-.topnav a:hover {
-        background-color: #ddd;
-        color: black !important;
-}
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-.active {
-    background-color: #127CC0;
-    color: white;
-}
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black !important;
+            }
 
-.dropdown-item {
-    color: black !important;
-    text-align: left !important;
-}
-.btn-orange {
+            .active {
+                background-color: #127CC0;
+                color: white;
+            }
+
+        .dropdown-item {
+            color: #E35205 !important;
+            text-align: left !important;
+        }
+
+        .btn-orange {
             background-color: #E35205;
             color: white;
         }
@@ -70,106 +78,30 @@ header{
 
         .form-control{
             border-radius: 0 !important;
-}
+        }
 
-main{
-  width: 100%;
-}
+        .previous {
+          background-color: #E35205;
+          color: black;
+        }
 
-.search{
-  width: 100%
-  position:relative;
-  position: absolute;
-  top:230px;
-  left:20px;
-  transform: translate();
-}
+        .next {
+          background-color: #E35205;
+          color: white;
+        }
 
-button{
-  position: fixed;
-}
+        .round {
+          border-radius: 50%;
+        }
 
-button:focus{
-  color:#00b4cc;
-}
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          justify-content: space-around;
+          align-content: space-between;
+        }
 
-.searchterm{
-  float:left;
-  width: 100%;
-  border: 3px solid #353540;
-  padding: 11px;
-  font-size: 17px;
-  outline:none;
-  transition: 1s all;
-}
-
-.searchterm:focus{
-  color:#454347;
-  border:3px solid  #1F1F5F;
-}
-
-.searchbutton{
-  width: 50px;
-  height:50px;
-  border: 1px solid #353540;
-  background-color: #353540;
-  text-align: center;
-  color:#454347;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*footer*/
-
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1F1F5F;
-  padding:30px 30px;
-  margin-top: 100px;
-  clear:both;
-  text-align: left;
-
-
-}
-
-
-footer h2{
-  font-style: italic;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-shadow:2px 2px 4px #000000;
-  position: static;
-  top:485px;
-  text-decoration: none;
-}
-
-footer ul{
-text-decoration: none;
-list-style: none;
-}
-
-p{
-  position:absolute;
-  top:580px;
-  left:16px;
-  color:#FFFFFF;
-  text-emphasis-position: below;
-  margin-top: 40px;
-}
-
-@media only screen and (max-width: 400px) {
-  [class*="bottom"] {
-    width: 100%;
-    height:20px;
-    background:#FFFFFF;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-   [class*="banner"]{
-  background-color: #FFFFFF;
-   }
-}
+        .card{
+            border:0px !important;
+        }
