@@ -8,84 +8,67 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
-    <link rel="icon" href="favicon.ico" >
+    <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
-
-<!-- Header -->
-<header class="row topnav" id="myTopnav">
-  <div class="col-md-12">
-    <nav class="navbar navbar-expand-sm bg-Arafura-Blue navbar-dark">
-      <!-- logo -->
-      <figure>
-        <figcaption>Logo</figcaption>
-        <img src="./images/logo.png" alt="logo" style="width:70px;">
-      </figure>
-
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a id="lnkHome" class="nav-link active" href="javascript:GotoUrl('lnkHome')">Home</a>
-        </li>
-
-      <!-- Plan Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plan</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="javascript:GotoUrl('dvJourneyPlanner')">Journey Planner</a>
-            <a class="dropdown-item" href="javascript:GotoUrl('dvTimeTable')">Timetable</a>
-          </div>
-      </li>
-
-      <!-- Tickets Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tickets</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="javascript:GotoUrl('dvTopUp')">Online TopUp</a>
-            <a class="dropdown-item" href="javascript:GotoUrl('dvManagingCard')">Managing Card</a>
-          </div>
-      </li>
-
-      <!-- More Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
-            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
-          </div>
-      </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<navbar class="info_bar">
-
-  <img src="https://img.icons8.com/color/48/000000/warning-shield.png"/>
-  <p class="message"> "Coronavirus: A State of Emergency has been declared in the Northern Territory due to coronavirus (COVID-19)."</p>
-  <div class="link-container" style="display: initial;"><div class="seperator"></div><a class="link int-link hide-on-interact" href="http://www.coronavirus.nt.gov.au" target="_self" data-intid="15"><span class="link-text">Learn more</span><svg class="arrow-icon" width="9" height="10" viewBox="0 0 9 9"><path d="M4.7,4.5L0,9h2.8l3.8-3.7C6.9,5.1,7,4.8,7,4.5c0-0.3-0.1-0.6-0.4-0.8L2.8,0H0L4.7,4.5z"></path></svg></a></div>
-
-</navbar>
-
+    <!-- Header -->
+    <header class="row topnav" id="myTopnav">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm bg-Arafura-Blue navbar-dark">
+                <!-- logo -->
+                <figure>
+                    <figcaption>Logo</figcaption>
+                    <img src="./images/logo.png" alt="logo" style="width:70px;">
+                </figure>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="lnkHome" class="nav-link active" href="javascript:GotoUrl('lnkHome')">Home</a>
+                    </li>
+                    <!-- Plan Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plan</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:GotoUrl('dvJourneyPlanner')">Journey Planner</a>
+                            <a class="dropdown-item" href="javascript:GotoUrl('dvTimeTable')">Timetable</a>
+                        </div>
+                    </li>
+                    <!-- Tickets Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tickets</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:GotoUrl('dvTopUp')">Online TopUp</a>
+                            <a class="dropdown-item" href="javascript:GotoUrl('dvManagingCard')">Managing Card</a>
+                        </div>
+                    </li>
+                    <!-- More Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
+                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- Load Area -->
     <div class="row">
-        <div id="loadArea" class="col-md-12" style="background-color:#f2f3f4;"></div>
+        <div id="loadArea" class="col-md-12" style="background-color:#f2f3f4;">
+        </div>
     </div>
-
     <!-- Body -->
     <div class="container-fluid px-0">
         <div class="row mx-0">
             <div class="col-12 px-0">
                 <img src="images/panimoni180200047.jpg" class="img-fluid w-100" style="height:450px;">
-                <div class="top-left"><h1>Start Your Journey</h1></div>
+                <div class="top-right"><h1>Start Your Journey</h1></div>
             </div>
         </div>
     </div>
-
     <!-- dvJourneyPlaner -->
     <div id="dvJourneyPlanner" class="row display-none">
         <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
@@ -97,7 +80,6 @@
                         <option value="" selected>-- SELECT --</option>
                     </select>
                 </div>
-
                 <div class="col-sm-5">
                     <h6>TO</h6>
                     <select class="form-control selectpicker" id="ddlTo" data-live-search="true">
@@ -115,7 +97,6 @@
             </div>
         </div>
     </div>
-
     <!-- dvTimeTable -->
     <div id="dvTimeTable" class="row display-none">
         <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
@@ -130,12 +111,10 @@
                         <h6>Select Line Or Route</h6>
                         <select class="form-control selectpicker" id="ddlRoute" data-live-search="true"></select>
                     </div>
-
                     <div class="col-sm-2 text-center">
                         <button type="button" id="btnSearch" onclick="javascript: ShowTimetable()" class="btn btn-orange" style="margin-top: 22px;">Search</button>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-12 te" style="margin-top:10px;">
@@ -146,7 +125,6 @@
             </div>
         </div>
     </div>
-
     <!-- dvManagingCard -->
     <div id="dvManagingCard" class="row display-none">
         <div class="col-md-12 " style="min-height: 385px; top: 20px; bottom: 20px;">
@@ -154,21 +132,16 @@
                 <div class="col-md-6">
                     <h3>Get Card</h3>
                     You can buy weekly or multiple trip Tap and Ride cards.<br>
-
                     The full fare card is green and the concession card is orange. Both are rechargeable.<br>
-
                     You can't use your travel card to pay another person's fare at the same time as your own. Each person travelling will need to purchase their own card.<br>
-
 
                     <br>
                     <p>
                         Tap and Ride cards are issued for multiple and weekly trips.<br>
                         Concession card holders can get discounted travel.
                     </p>
-
                     <input type="radio" id="full fare" name="Card" value="Full Fare">
                     <label for="Card">Full fare</label><br>
-
                     <input type="radio" id="concession fare" name="Card" value="Concession Fare">
                     <label for="female">Concession fare</label><br>
                 </div>
@@ -178,58 +151,48 @@
             </div>
         </div>
     </div>
-
     <!-- dvTopUp -->
     <div id="dvTopUp" class="row display-none">
         <div class="col-md-12 " style="min-height: 250px; top: 20px; bottom: 20px;">
             <div class="row">
                 <div id="dvTopUpContent" class="col-md-12">
-
                     <h4>Top up Your tap and ride</h4>
                     <p>
                         You will need to have:<br>
                         Your tap and ride Card<br>
                         Your Australian-issued Mastercard or Visa credit/debit card
                     </p>
-
                     <div class="row">
                         <div class="col-sm-5">
                             <label for="text">Enter tap and ride card NO:</label><br>
                             <input id="txtCardNo" type="number" name="" class="form-control">
                         </div>
-
                         <div class="col-sm-5">
                             <label for="text">Enter your Card details</label><br>
                             <input id="txtCardDetail" type="number" name="confirm and Pay" class="form-control">
                         </div>
-
                         <div class="col-sm-2 text-center">
                             <button type="button" id="btnTopUp" onclick="javascript:TopUpCard()" class="btn btn-orange" style="margin-top: 22px;">Save</button>
                         </div>
                     </div>
-
                 </div>
                 <div id="dvWarningTopUp" class="col-md-12 text-success display-none">
                     <h4>It may take 90 min</h4>
                 </div>
-
             </div>
         </div>
     </div>
-
     <!-- dvContactUs -->
     <div id="dvContactUs" class="row display-none">
         <div class="col-md-6 " style="min-height: 700px; top: 20px; bottom: 20px; left:20px; background-color:white;">
             <div class="container">
                 <h3>Contact US</h3>
-
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="fname">Name</label>
                         <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name..">
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="country">Country</label>
@@ -240,40 +203,28 @@
                         </select>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="email">Email</label>
                         <input type="email" id="email" class="form-control" required placeholder="Your email..">
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="subject">Subject</label>
                         <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                     </div>
                 </div>
-
-      <div class="row" style="margin-top:10px;">
-        <div class="col-sm-12">
-        <button type="button" id="btnSubmit" onclick="openWin()" class="btn btnSubmit" >Submit Form</button>
-
-        <script>
-        var formSent;
-        function openWin() {
-        formSent = window.open("", "formSent", "width=200,height=100");
-        formSent.document.write("<p>Your request has been sent</p>");
-        }
-        </script>
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-sm-12">
+                        <input class="btn btn-orange" type="button" value="Submit">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
-      </div>
     </div>
-
     <!--3 Ticket buttons-->
-    <div class="row" style="margin:10px 10px;">
+    <!--<div class="row" style="margin:10px 10px;">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -287,7 +238,79 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+
+    <!--3 Ticket buttons-->
+    <section class="card-section container" style="margin-top:10px;">
+        <div class="row" style="background-color:#f2f3f4;">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img-fill">
+                        <img src="images/card.jpg" width="350" height="230" >
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__copy">
+                            <h2 class="h3 card-title">Buying a Travel Card</h2>
+                            <div class="card-wysiwyg">
+                                <p>
+                                    Travel is your ticket to travel on buses in Darwin and many parts of regional Northern Territory.
+                                </p>
+                                <p>
+                                    <span>
+                                        Buy your Travel Card, top up with Travel Card Money or travel card  Pass and you're ready to go.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img-fill">
+                        <img src="images/card.jpg" width="350" height="230">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__copy">
+                            <h2 class="h3 card-title">Topping up to travel</h2>
+                            <div class="card-wysiwyg">
+                                <p>
+                                    If you travel occasionally, pay as you go with travel card Money. If you travel often, buy consecutive days with a travel card Pass.
+                                </p>
+                                <p>
+                                    <span>
+                                        Your travel card can hold both travel card Money and travel card Pass. Compare and choose the best one for you each time you top up.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-img-fill">
+                        <img src="images/card.jpg" width="350" height="230">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__copy">
+                            <h2 class="h3 card-title">Managing your travel card</h2>
+                            <div class="card-wysiwyg">
+                                <p>
+                                    Register your travel card online to enjoy special benefits.
+                                </p>
+                                <p>
+                                    <span>
+                                        See your travel history, set Auto Top Up, protect your travel card balance and receive a new card when yours expires.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div class="row">
@@ -297,39 +320,39 @@
                 <div class="container">
                     <ul class="list-unstyled list-inline text-center">
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-fb mx-1" href="http://www.consumeraffairs.nt.gov.au/contact-us" target="_blank">Customer service</a>
+                            <a class="btn-floating btn-fb mx-1">
+                                Customer service
+                            </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-tw mx-1" href="./html/about_ntpt.html" target="_blank">
-                                About NT PT</a>
+                            <a class="btn-floating btn-tw mx-1">
+                                About NT PT
+                            </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-gplus mx-1" href="https://nt.gov.au/industry" target="_blank">
-                                Data and reporting</a>
+                            <a class="btn-floating btn-gplus mx-1">
+                                Data and reporting
+                            </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1" href="https://nt.gov.au/law" target="_blank">
-                                Legal and policies</a>
+                            <a class="btn-floating btn-li mx-1">
+                                Legal and policies
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!-- Footer Elements -->
                 <!-- Copyright -->
                 <div class="footer-copyright text-center py-3" style="padding-top: 0px !important;">
-                  <div class="flex-container">
-                      <div><a href="#" class="previous">&laquo; Previous</a></div>
-                      © 2020 Copyright: Team Champo
-                      <div><a href="#" class="next">Next &raquo;</a></div>
+                    <div class="flex-container">
+                        © 2020 Copyright: Team Champo
                     </div>
                     <!-- <a href="https://mdbootstrap.com/">Team Champo</a> -->
-
                 </div>
                 <!-- Copyright -->
-
             </footer>
             <!-- Footer -->
         </div>
     </div>
-
 </body>
 </html>
