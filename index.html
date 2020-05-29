@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
     <link rel="icon" href="favicon.ico">
+
 </head>
 <body>
     <!-- Header -->
@@ -18,7 +19,7 @@
         <div class="col-md-12">
             <nav class="navbar navbar-expand-sm bg-Arafura-Blue navbar-dark">
                 <!-- logo -->
-                <figure>
+                <figure style="margin: -20px 0 0;">
                     <figcaption>Logo</figcaption>
                     <img src="./images/logo.png" alt="logo" style="width:70px;">
                 </figure>
@@ -55,20 +56,52 @@
             </nav>
         </div>
     </header>
+
+    <!-- Image Slider -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mySlides fade">
+                <img src="images/panimoni180200047.jpg" style="width:100%" height="450px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/1.jpg" style="width:100%" height="450px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/2.jpg" style="width:100%" height="450px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/3.jpg" style="width:100%" height="450px;"> 
+            </div>
+            <div class="top-right"><h1>Start Your Journey</h1></div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var mySlides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < mySlides.length; i++) {
+                mySlides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > mySlides.length) { slideIndex = 1 }
+            mySlides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+    <br>
+
     <!-- Load Area -->
     <div class="row">
         <div id="loadArea" class="col-md-12" style="background-color:#f2f3f4;">
         </div>
     </div>
-    <!-- Body -->
-    <div class="container-fluid px-0">
-        <div class="row mx-0">
-            <div class="col-12 px-0">
-                <img src="images/panimoni180200047.jpg" class="img-fluid w-100" style="height:450px;">
-                <div class="top-right"><h1>Start Your Journey</h1></div>
-            </div>
-        </div>
-    </div>
+
     <!-- dvJourneyPlaner -->
     <div id="dvJourneyPlanner" class="row display-none">
         <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
@@ -97,6 +130,7 @@
             </div>
         </div>
     </div>
+
     <!-- dvTimeTable -->
     <div id="dvTimeTable" class="row display-none">
         <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
@@ -125,6 +159,7 @@
             </div>
         </div>
     </div>
+
     <!-- dvManagingCard -->
     <div id="dvManagingCard" class="row display-none">
         <div class="col-md-12 " style="min-height: 385px; top: 20px; bottom: 20px;">
@@ -151,6 +186,7 @@
             </div>
         </div>
     </div>
+
     <!-- dvTopUp -->
     <div id="dvTopUp" class="row display-none">
         <div class="col-md-12 " style="min-height: 250px; top: 20px; bottom: 20px;">
@@ -182,6 +218,7 @@
             </div>
         </div>
     </div>
+
     <!-- dvContactUs -->
     <div id="dvContactUs" class="row display-none">
         <div class="col-md-6 " style="min-height: 700px; top: 20px; bottom: 20px; left:20px; background-color:white;">
@@ -223,23 +260,8 @@
             </div>
         </div>
     </div>
-    <!--3 Ticket buttons-->
-    <!--<div class="row" style="margin:10px 10px;">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <button type="button" class="btn btn-orange" onclick="javascript: GotoUrl('dvManagingCard')">Buy Travel Card</button>
-                </div>
-                <div class="col-md-4 text-center">
-                    <button type="button" class="btn btn-orange " onclick="javascript: GotoUrl('dvTopUp')">Top Up Your Card</button>
-                </div>
-                <div class="col-md-4 text-center">
-                    <button type="button" class="btn btn-orange" onclick="javascript: GotoUrl('dvManagingCard')">Manage your Card</button>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
+  
+    <hr />
     <section class="card-section container" style="margin-top:20px;">
         <div class="row" style="background-color:#f2f3f4;">
             <div class="col-12 col-md-6 col-lg-4">
@@ -301,14 +323,13 @@
             </div>
         </div>
     </section>
-
     <hr />
 
     <!--3 Ticket buttons-->
     <section class="card-section container" style="margin-top:20px;">
         <div class="row" style="background-color:#f2f3f4;">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
+                <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                     </div>
@@ -330,7 +351,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
+                <div class="card" onclick="javascript: GotoUrlFromButton('dvTopUp')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                     </div>
@@ -352,7 +373,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
+                <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                     </div>
