@@ -1,4 +1,5 @@
 // variable Initialization
+
 var city = ["Darwin", "Lakeside Drive", "Nightcliff", "Wulagi", "Casurina", "Rosebery", "FannieBay", "Karama"];   //array for binding From Location and To location droupdown (In Journey Planer page)
 
 var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];         //array for binding Route droupdown (In Timetable page)
@@ -71,7 +72,7 @@ function GotoUrl(div) {
         document.getElementById("loadArea").style.display = "none";                             // hide loadArea
     }
 
-    //other link click event
+        //other link click event
     else {
         document.getElementById("loadArea").style.display = "block";                            // show loadArea
         var lnkHome = document.getElementById("lnkHome");
@@ -85,6 +86,25 @@ function GotoUrl(div) {
         document.getElementById("loadArea").innerHTML = document.getElementById(div).innerHTML; //Load page content in loadArea
 
     }
+    return false;
+}
+
+//for Going to different pages from button click ---------------------------------------------------------
+function GotoUrlFromButton(div) {
+    debugger;
+
+    // Remove Active class from whole page
+    var elems = document.querySelectorAll(".active");
+
+    [].forEach.call(elems, function (el) {
+        el.classList.remove("active");
+    });
+
+    document.getElementById("loadArea").style.display = "block";                            // show loadArea
+
+    document.getElementById("loadArea").innerHTML = "";
+    document.getElementById("loadArea").innerHTML = document.getElementById(div).innerHTML; //Load page content in loadArea
+
     return false;
 }
 
@@ -138,7 +158,7 @@ function ShowDistance() {
                 var lbldist = document.getElementById("lbldist");
                 lbldist.classList.remove("display-none");
 
-                document.getElementById('lbldist').innerHTML = 'Distance is ' + distArray[FromLocation - 1][ToLocation - 1] +' By Bus.';
+                document.getElementById('lbldist').innerHTML = 'Distance is ' + distArray[FromLocation - 1][ToLocation - 1] + ' By Bus.';
 
             } else {
                 alert("From and To location can not be same");
