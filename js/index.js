@@ -54,7 +54,6 @@ for (i = 0; i < city.length; i++) {
 }
 console.log(distArray);
 
-
 //for Going to different pages ---------------------------------------------------------
 function GotoUrl(div) {
     debugger;
@@ -86,6 +85,10 @@ function GotoUrl(div) {
         document.getElementById("loadArea").innerHTML = document.getElementById(div).innerHTML; //Load page content in loadArea
 
     }
+
+    $('html, body').animate({ scrollTop: $('#loadArea').offset().top }, 'slow');
+    //$('#loadArea').focus();
+
     return false;
 }
 
@@ -104,6 +107,9 @@ function GotoUrlFromButton(div) {
 
     document.getElementById("loadArea").innerHTML = "";
     document.getElementById("loadArea").innerHTML = document.getElementById(div).innerHTML; //Load page content in loadArea
+
+    $('html, body').animate({ scrollTop: $('#loadArea').offset().top }, 'slow');
+    //$('#loadArea').focus();
 
     return false;
 }
@@ -176,3 +182,4 @@ function ShowDistance() {
         lbldist.classList.add("display-none");
     }
 }
+
