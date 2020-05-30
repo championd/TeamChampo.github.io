@@ -49,7 +49,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
-                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact Us</a>
+                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
                         </div>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="mySlides fade">
-                <img src="images/covid19_safepractices.png" style="width:100%" height="450px;">
+                <img src="images/3.jpg" style="width:100%" height="450px;">
             </div>
             <div class="top-right"><h1>Start Your Journey</h1></div>
         </div>
@@ -104,7 +104,7 @@
 
     <!-- dvJourneyPlaner -->
     <div id="dvJourneyPlanner" class="row display-none">
-        <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
+        <div class="col-md-12 clsCommon">
             <h3>Journey Planner</h3>
             <div class="row">
                 <div class="col-sm-5">
@@ -133,7 +133,7 @@
 
     <!-- dvTimeTable -->
     <div id="dvTimeTable" class="row display-none">
-        <div class="col-md-12 " style="min-height: 200px; top: 20px; bottom: 20px;">
+        <div class="col-md-12 clsCommon">
             <div id="dvTimeTableContent">
                 <div class="row">
                     <div class="col-md-12">
@@ -162,7 +162,7 @@
 
     <!-- dvManagingCard -->
     <div id="dvManagingCard" class="row display-none">
-        <div class="col-md-12 " style="min-height: 385px; top: 20px; bottom: 20px;">
+        <div class="col-md-12 clsCommon">
             <div class="row">
                 <div class="col-md-6">
                     <h3>Get Card</h3>
@@ -189,7 +189,7 @@
 
     <!-- dvTopUp -->
     <div id="dvTopUp" class="row display-none">
-        <div class="col-md-12 " style="min-height: 250px; top: 20px; bottom: 20px;">
+        <div class="col-md-12 clsCommon">
             <div class="row">
                 <div id="dvTopUpContent" class="col-md-12">
                     <h4>Top up Your tap and ride</h4>
@@ -221,9 +221,9 @@
 
     <!-- dvContactUs -->
     <div id="dvContactUs" class="row display-none">
-        <div class="col-md-6 " style="min-height: 700px; top: 20px; bottom: 20px; left:20px; background-color:white;">
+        <div class="col-md-6 clsCommon">
             <div class="container">
-                <h3>Contact Us</h3>
+                <h3>Contact US</h3>
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="fname">Name</label>
@@ -254,35 +254,28 @@
                 </div>
                 <div class="row" style="margin-top:10px;">
                     <div class="col-sm-12">
-                    <button type="button" id="btnSubmit" onclick="openWin()" class="btn btnSubmit" >Submit Form</button>
-
-                    <script>
-                    var formSent;
-                    function openWin() {
-                      formSent = window.open("", "formSent", "width=200,height=100");
-                      formSent.document.write("<p>Your request has been sent</p>");
-                    }
-                    </script>
+                        <input class="btn btn-orange" type="button" value="Submit">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Tooltip -->
     <hr />
-    <section class="card-section container" style="margin-top:20px;">
-        <div class="row" style="background-color:#f2f3f4;">
+    <div class="card-section container" style="margin-top:20px;">
+        <div class="row" style="background-color:#f2f3f4; padding:10px;">
             <div class="col-12 col-md-6 col-lg-4">
                 <a href="https://nt.gov.au/driving/public-transport-cycling/public-buses/alerts-and-route-changes" class="toolkitlink" target="_blank">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-body__copy">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="images/alert.jpg" class="rounded-circle" width="80" height="80">
+                                    <div class="col-md-4">
+                                        <img src="images/alert.jpg" class="rounded-circle zoomImg">
                                     </div>
-                                    <div class="col-md-9">
-                                        <h3 class="h4 card-title">Public bus alerts and route changes</h3>
+                                    <div class="col-md-8">
+                                        <h3 class="h4 card-title zoomText">Bus alerts and route changes</h3>
                                     </div>
                                 </div>
                             </div>
@@ -297,12 +290,12 @@
                         <div class="card-body">
                             <div class="card-body__copy">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="images/4-people-icon-group.jpg" class="rounded-circle" width="80" height="80">
+                                    <div class="col-md-4">
+                                        <img src="images/4-people-icon-group.jpg" class="rounded-circle zoomImg">
                                     </div>
 
-                                    <div class="col-md-9">
-                                        <h3 class="h4 card-title">Staff are not handling cash</h3>
+                                    <div class="col-md-8">
+                                        <h3 class="h4 card-title zoomText">Staff are no handling cash</h3>
                                     </div>
                                 </div>
                             </div>
@@ -316,12 +309,12 @@
                         <div class="card-body">
                             <div class="card-body__copy">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="images/rules black.jpg" class="rounded-circle" width="80" height="80">
+                                    <div class="col-md-4">
+                                        <img src="images/rules black.jpg" class="rounded-circle zoomImg">
                                     </div>
 
-                                    <div class="col-md-9">
-                                        <h3 class="h4 card-title">Rules for catching a public bus</h3>
+                                    <div class="col-md-8">
+                                        <h3 class="h4 card-title zoomText">Rules for catching a public bus</h3>
                                     </div>
                                 </div>
                             </div>
@@ -330,7 +323,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </div>
     <hr />
 
     <!--3 Ticket buttons-->
@@ -340,6 +333,7 @@
                 <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
+                        <div class="imageText"><b>Buy</b></div>
                     </div>
                     <div class="card-body">
                         <div class="card-body__copy">
@@ -350,7 +344,7 @@
                                 </p>
                                 <p>
                                     <span>
-                                        Buy your Travel Card, top up with Travel Card Money or travel card Pass and you're ready to go.
+                                        Buy your Travel Card, top up with Travel Card Money or travel card  Pass and you're ready to go.
                                     </span>
                                 </p>
                             </div>
@@ -362,6 +356,7 @@
                 <div class="card" onclick="javascript: GotoUrlFromButton('dvTopUp')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
+                        <div class="imageText"><b>Top Up</b></div>
                     </div>
                     <div class="card-body">
                         <div class="card-body__copy">
@@ -384,6 +379,7 @@
                 <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
+                        <div class="imageText"><b>Manage</b></div>
                     </div>
                     <div class="card-body">
                         <div class="card-body__copy">
@@ -409,8 +405,8 @@
     <div class="row">
         <div class="col-md-12">
             <!-- Footer -->
-            <footer class="page-footer font-small bg-Arafura-Blue pt-4">
-                <div class="container">
+            <footer class="page-footer font-small bg-Arafura-Blue">
+                <div class="container" style="padding-top: 10px;">
                     <ul class="list-unstyled list-inline text-center">
                         <li class="list-inline-item">
                             <a class="btn-floating btn-fb mx-1">
@@ -436,7 +432,7 @@
                 </div>
                 <!-- Footer Elements -->
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3" style="padding-top: 0px !important;">
+                <div class="footer-copyright text-center" style="padding-top: 0px !important;">
                     <div class="flex-container">
                         © 2020 Copyright: Team Champo
                     </div>
