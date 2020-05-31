@@ -4,6 +4,7 @@ var city = ["Darwin", "Lakeside Drive", "Nightcliff", "Wulagi", "Casurina", "Ros
 
 var route = ["Chan Ward", "Lyons Ward", "Richardson Ward", "Water ward", "Palmerston", "Litchfield"];         //array for binding Route droupdown (In Timetable page)
 
+var slideIndex = 0;
 
 // Bind From location To location and Route dropdown on window load event
 window.onload = function () {
@@ -39,6 +40,11 @@ window.onload = function () {
 
 };
 
+//Call after document will ready
+$(document).ready(function () {
+    //Call Change Image in Slider Function
+    showSlides();
+});
 
 // add random distance to show in journey planer page for From location and To location
 var distArray = []
@@ -92,8 +98,8 @@ function GotoUrl(div) {
     return false;
 }
 
-//for Going to different pages from button click ---------------------------------------------------------
-function GotoUrlFromButton(div) {
+//for Going to different pages from Card click ---------------------------------------------------------
+function GotoUrlFromCard(div) {
     debugger;
 
     // Remove Active class from whole page
@@ -183,3 +189,20 @@ function ShowDistance() {
     }
 }
 
+//Change Image in Slider
+function showSlides() {
+    var i;
+    var mySlides = document.getElementsByClassName("mySlides");
+    // Hide all slider images
+    for (i = 0; i < mySlides.length; i++) {
+        mySlides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > mySlides.length)
+    {
+        slideIndex = 1;
+    }
+    //Show one by one image
+    mySlides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
+}
