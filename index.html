@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
     <link rel="icon" href="favicon.ico">
@@ -49,7 +50,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="https://www.dailytelegraph.com.au/travel/australia/northern-territory" target="_blank">News</a>
-                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact Us</a>
+                            <a class="dropdown-item" href=" javascript:GotoUrl('dvContactUs')">Contact US</a>
                         </div>
                     </li>
                 </ul>
@@ -61,39 +62,18 @@
     <div class="row">
         <div class="col-md-12">
             <div class="mySlides fade">
-                <img src="images/panimoni180200047.jpg" style="width:100%" height="450px;">
+                <img src="images/2.jpg" style="width:100%" height="550px;">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/1.jpg" style="width:100%" height="450px;">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/2.jpg" style="width:100%" height="450px;">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/3.jpg" style="width:100%" height="450px;">
+                <img src="images/3.jpg" style="width:100%" height="550px;">
             </div>
             <div class="top-right"><h1>Start Your Journey</h1></div>
+            <div class="mySlides fade">
+                <img src="images/1.jpg" style="width:100%" height="550px;">
+            </div>
         </div>
     </div>
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var mySlides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < mySlides.length; i++) {
-                mySlides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > mySlides.length) { slideIndex = 1 }
-            mySlides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000);
-        }
-    </script>
     <br>
 
     <!-- Load Area -->
@@ -223,46 +203,38 @@
     <div id="dvContactUs" class="row display-none">
         <div class="col-md-6 clsCommon">
             <div class="container">
-                <h3>Contact Us</h3>
+                <h3>Contact US</h3>
                 <div class="row">
-                  <div class="col-sm-12">
-                      <label for="fname">Name</label>
-                      <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name..">
-                  </div>
+                    <div class="col-sm-12">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name..">
+                    </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12">
-                    <label for="country">Country</label>
-                      <select id="country" name="country" class="form-control">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                  </div>
+                    <div class="col-sm-12">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" class="form-control">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="Your email.." required >
-                  </div>
+                    <div class="col-sm-12">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required placeholder="Your email..">
+                    </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12">
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  </div>
+                    <div class="col-sm-12">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
                 </div>
                 <div class="row" style="margin-top:10px;">
                     <div class="col-sm-12">
-                      <button type="button" id="btnSubmit" onclick="openWin()" class="btn btnSubmit" >Submit Form</button>
-
-                      <script>
-                      var formSent;
-                      function openWin() {
-                        formSent = window.open("", "formSent", "width=200,height=100");
-                        formSent.document.write("<p>Your request has been sent</p>");
-                      }
-                      </script>
+                        <input class="btn btn-orange" type="button" value="Send">
                     </div>
                 </div>
             </div>
@@ -303,7 +275,7 @@
                                     </div>
 
                                     <div class="col-md-8">
-                                        <h3 class="h4 card-title zoomText">Staff are not handling cash</h3>
+                                        <h3 class="h4 card-title zoomText">Staff are no handling cash</h3>
                                     </div>
                                 </div>
                             </div>
@@ -334,11 +306,11 @@
     </div>
     <hr />
 
-    <!--3 Ticket buttons-->
+    <!-- 3 Ticket buttons -->
     <section class="card-section container" style="margin-top:20px;">
         <div class="row" style="background-color:#f2f3f4;">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
+                <div class="card" onclick="javascript: GotoUrlFromCard('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                         <div class="imageText"><b>Buy</b></div>
@@ -347,21 +319,21 @@
                         <div class="card-body__copy">
                             <h2 class="h3 card-title">Buying a Travel Card</h2>
                             <div class="card-wysiwyg">
-                              <p>
-                                Travel is your ticket to travel on buses in Darwin and many parts of regional Northern Territory.
-                              </p>
-                              <p>
-                                <span>
-                                  Buy your Travel Card, top up with Travel Card Money or travel card  Pass and you're ready to go.
-                                </span>
-                              </p>
+                                <p>
+                                    Travel is your ticket to travel on buses in Darwin and many parts of regional Northern Territory.
+                                </p>
+                                <p>
+                                    <span>
+                                        Buy your Travel Card, top up with Travel Card Money or travel card  Pass and you're ready to go.
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" onclick="javascript: GotoUrlFromButton('dvTopUp')" style="cursor:pointer">
+                <div class="card" onclick="javascript: GotoUrlFromCard('dvTopUp')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                         <div class="imageText"><b>Top Up</b></div>
@@ -371,12 +343,12 @@
                             <h2 class="h3 card-title">Topping up to travel</h2>
                             <div class="card-wysiwyg">
                                 <p>
-                                  If you travel occasionally, pay as you go with travel card Money. If you travel often, buy consecutive days with a travel card Pass.
+                                    If you travel occasionally, pay as you go with travel card Money. If you travel often, buy consecutive days with a travel card Pass.
                                 </p>
                                 <p>
-                                  <span>
-                                    Your travel card can hold both travel card Money and travel card Pass. Compare and choose the best one for you each time you top up.
-                                  </span>
+                                    <span>
+                                        Your travel card can hold both travel card Money and travel card Pass. Compare and choose the best one for you each time you top up.
+                                    </span>
                                 </p>
                             </div>
                         </div>
@@ -384,7 +356,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" onclick="javascript: GotoUrlFromButton('dvManagingCard')" style="cursor:pointer">
+                <div class="card" onclick="javascript: GotoUrlFromCard('dvManagingCard')" style="cursor:pointer">
                     <div class="card-img-fill">
                         <img src="images/card.jpg" width="350" height="230">
                         <div class="imageText"><b>Manage</b></div>
@@ -410,46 +382,18 @@
     </section>
 
     <!-- Footer -->
-    <div class="row">
-        <div class="col-md-12">
-            <!-- Footer -->
-            <footer class="page-footer font-small bg-Arafura-Blue">
-                <div class="container" style="padding-top: 10px;">
-                    <ul class="list-unstyled list-inline text-center">
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-fb mx-1">
-                                Customer service
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-tw mx-1">
-                                About NT PT
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-gplus mx-1">
-                                Data and reporting
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1">
-                                Legal and policies
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Footer Elements -->
-                <!-- Copyright -->
-                <div class="footer-copyright text-center" style="padding-top: 0px !important;">
-                    <div class="flex-container">
-                        © 2020 Copyright: Team Champo
-                    </div>
-                    <!-- <a href="https://mdbootstrap.com/">Team Champo</a> -->
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a class="btn btn-orange" href="#" style="margin:10px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section" style="margin:1px;">
+            <a href="https://www.facebook.com/" target="_blank" class="iLink"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="iLink"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/" target="_blank" class="iLink"><i class="fa fa-snapchat"></i></a>
+            <a href="https://in.pinterest.com/" target="_blank" class="iLink"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://twitter.com/login" target="_blank" class="iLink"><i class="fa fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/" target="_blank" class="iLink"><i class="fa fa-linkedin"></i></a>
         </div>
-    </div>
+        <p>Powered by <a href="">Team Champo</a></p>
+    </footer>
+
 </body>
 </html>
