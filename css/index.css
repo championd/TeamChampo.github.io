@@ -8,8 +8,8 @@
         }
 
         footer {
-        position: static;
-        height: 100px;
+        position: fixed;
+        height: 75px;
         background-color: #1F1F5F;
         color: white;
         bottom: 0px;
